@@ -1,0 +1,27 @@
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# Virtual environments
+.venv/
+venv/
+.env
+
+# Build/Dist artifacts
+build/
+dist/
+*.spec
+
+# OS/Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.cursor/
+
+# Large local data
+rag_data/
+*.betachat
+
+# Ignore everything in user folders if mistakenly opened
+/../../../../*
