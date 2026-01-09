@@ -4,7 +4,7 @@
   <img src="Images/sur5_logo.png" alt="Sur5 Lite Logo" width="200"/>
 </p>
 
-> ⚠️ **Trademark Notice**: The Sur5™ and Sur5ve™ names and logos are trademarks of Sur5ve LLC and are **NOT covered by the MIT License**. See [TRADEMARK.md](TRADEMARK.md) for usage policy.
+> ⚠️ **Trademark Notice**: The Sur5ve™ name is a trademarks of Sur5ve LLC and are **NOT covered by the MIT License**. See [TRADEMARK.md](TRADEMARK.md) for usage policy.
 
 **Offline, Portable, No Cloud**
 
