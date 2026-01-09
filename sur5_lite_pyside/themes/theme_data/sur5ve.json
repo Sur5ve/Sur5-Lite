@@ -1,0 +1,31 @@
+{
+    "name": "Sur5ve",
+    "description": "Sur5ve LLC Signature Theme",
+    "colors": {
+        "primary": "#bd93f9",
+        "primary_hover": "#ff79c6",
+        "secondary": "#6272a4",
+        "accent": "#50fa7b",
+        "danger": "#ff5555",
+        "danger_hover": "#ff6e6e",
+        
+        "bg_primary": "#282a36",
+        "bg_secondary": "#21222c",
+        "bg_tertiary": "#44475a",
+        "bg_quaternary": "#6272a4",
+        
+        "text_primary": "#f8f8f2",
+        "text_secondary": "#f8f8f2",
+        "text_muted": "#6272a4",
+        "text_error": "#ff5555",
+        "text_success": "#50fa7b",
+        
+        "border": "#44475a",
+        "border_focus": "#bd93f9",
+        "border_hover": "#6272a4",
+        
+        "selection": "#bd93f9",
+        "selection_bg": "rgba(189, 147, 249, 0.2)",
+        "shadow": "rgba(0, 0, 0, 0.4)"
+    }
+}

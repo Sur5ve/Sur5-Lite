@@ -1,0 +1,7 @@
+#!/bin/bash
+# Convenience launcher - Quick Sur5 launch
+# Navigate to App root (one level up from scripts/)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$(dirname "$SCRIPT_DIR")"
+./tools/launchers/launch.sh "$@"
+

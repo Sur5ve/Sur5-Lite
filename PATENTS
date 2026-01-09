@@ -1,0 +1,78 @@
+# Patent Grant and Defensive Termination
+
+## Additional Grant of Patent Rights (Version 1)
+
+"Software" means the Sur5 Lite software distributed by Sur5ve LLC under the MIT License.
+
+Sur5ve LLC hereby grants to each recipient of the Software ("you") a perpetual,
+worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated
+in this section) patent license to make, have made, use, offer to sell, sell,
+import, and otherwise transfer the Software, where such license applies only to
+those patent claims, both currently owned or controlled by Sur5ve LLC and acquired
+in the future, licensable by Sur5ve LLC that are necessarily infringed by the
+Software as distributed by Sur5ve LLC.
+
+## Defensive Termination
+
+If you (or any of your subsidiaries, corporate affiliates, or agents) initiate
+directly or indirectly, or take a direct financial interest in, any Patent
+Assertion against Sur5ve LLC or any licensee of this Software:
+
+1. **Immediate Termination:** Any patent rights granted to you under this document
+   shall automatically terminate as of the date such Patent Assertion is first filed.
+
+2. **Definition of Patent Assertion:** "Patent Assertion" means any lawsuit,
+   claim, action, or proceeding alleging direct, indirect, or contributory
+   infringement or inducement to infringe any patent, including cross-claims
+   and counterclaims.
+
+3. **Scope:** This termination applies to all versions of the Software, including
+   past, present, and future releases.
+
+## No Other Rights
+
+This patent grant does not extend to:
+- Trademarks (see TRADEMARK.md)
+- Third-party components (see licenses/THIRD_PARTY_NOTICES.md)
+- Derivative works not distributed by Sur5ve LLC
+
+## No Implied Licenses
+
+Except for the explicit patent license granted above, no other patent rights are
+granted by implication, estoppel, or otherwise.
+
+## Disclaimer
+
+THIS PATENT GRANT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. IN NO EVENT SHALL SUR5VE LLC BE
+LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM YOUR USE OF THE
+SOFTWARE.
+
+---
+
+**Effective Date:** January 2026
+
+**Grantor:** Sur5ve LLC
+
+**Contact:** support@sur5ve.com
+
+---
+
+## Why This File Exists
+
+This PATENTS file provides explicit patent peace to users and contributors of
+Sur5 Lite. Many open source licenses (like MIT) do not include explicit patent
+grants, which can create uncertainty for commercial users.
+
+Key benefits of this grant:
+1. **Clarity:** Explicit permission to use any Sur5ve LLC patents in the Software
+2. **Protection:** Defensive termination discourages patent trolling
+3. **Peace of Mind:** Commercial users can adopt Sur5 Lite with confidence
+
+This approach is modeled after similar patent grants used by major open source
+projects (e.g., React, Go, Apache projects).
+
+---
+
+© 2024-2026 Sur5ve LLC. All rights reserved.

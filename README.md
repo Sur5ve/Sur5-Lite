@@ -1,124 +1,219 @@
-# Beta Version
-Advanced AI Desktop Assistant - Run powerful local LLMs anywhere, no installation required.
+# Sur5 Lite — Open Source Edge AI
 
-***Completely offline • No internet • No API keys • No cloud computing • No GPU required • No admin rights***
+<p align="center">
+  <img src="Images/sur5_logo.png" alt="Sur5 Lite Logo" width="200"/>
+</p>
 
-Beta Version is a cutting-edge portable AI application that runs large language models locally on any Windows computer. Simply drop the executable and your model file onto a USB drive, plug into any PC, and start an intelligent conversation with advanced AI capabilities.
+> ⚠️ **Trademark Notice**: The Sur5™ and Sur5ve™ names and logos are trademarks of Sur5ve LLC and are **NOT covered by the MIT License**. See [TRADEMARK.md](TRADEMARK.md) for usage policy.
 
-![Beta Version Interface](Images/Screenshot1.png)
+**Offline, Portable, No Cloud**
 
-![Beta Version Demo](Images/Combined_gif.gif)
+**Sur5 Lite** is an open source Edge AI assistant that runs entirely on your device.
+No cloud, no API keys, no data ever leaving your computer.
 
-# Why Beta Version is Revolutionary
+Built by [Sur5ve LLC](https://sur5ve.com).
 
-🚀 **Truly Portable**
-Single executable file runs on any Windows machine without installation or admin privileges.
+---
 
-🎨 **Intuitive Interface**
-Clean dual-pane design: compose prompts below, watch AI responses stream above in real-time.
+## ✨ Features
 
-🔍 **Smart Source Tracking**
-Automatic highlighting of prompt words in responses with Ctrl+click to trace sources across conversation history.
+- 🔌 **100% Offline** — True Edge AI, no internet required
+- 🧠 **Multiple Backends** — Supports llama.cpp and BitNet.cpp
+- 🎨 **Beautiful UI** — Modern PySide6 interface with multiple themes
+- 💭 **Thinking Mode** — Watch Sur reason through problems step-by-step
+- 📱 **Portable** — Run from USB on any computer
+- 🔒 **Private by Design** — Your conversations never leave your device
 
-💾 **Persistent Conversations**
-One-click save/load functionality keeps your AI sessions portable and organized.
+---
 
-⚡ **Optimized Performance**
-Built on llama.cpp for maximum CPU efficiency and compatibility across hardware configurations.
+## 📥 Quick Start
 
-🎹 **Power User Features**
-Full keyboard shortcuts: Ctrl+S send, Ctrl+Z stop, Ctrl+F search, Ctrl+X clear, plus mouse-wheel zoom.
-
-📚 **Advanced RAG Integration**
-Upload documents (PDF, DOCX, TXT, MD, HTML) for intelligent document analysis and question answering.
-
-# Quick Start Guide
-
-1. **Download** `BetaVersion.exe` from the releases section
-2. **Get a model** - We recommend `gemma-3-1b-it-Q4_K_M.gguf` for first-time users (~800MB)
-3. **Copy both files** to your USB drive or local folder
-4. **Double-click** `BetaVersion.exe` on any Windows computer
-5. **Wait for model loading** (first run only - cached for subsequent use)
-6. **Start chatting** with your local AI assistant
-
-For different models, use File → Select Model and browse to your preferred GGUF file.
-
-# Recommended Models
-
-| Model | Size | Performance | Best For |
-|-------|------|-------------|----------|
-| **gemma-3-1b-it-Q4_K_M.gguf** | ~800MB | ~20 tokens/sec on i7-10750H | General chat, quick responses |
-| **gemma-3-4b-it-Q4_K_M.gguf** | ~2.3GB | ~10 tokens/sec on i7-10750H | Better reasoning, detailed answers |
-| **qwen3-1.7b-q4_k_m.gguf** | ~1.0GB | ~18 tokens/sec on i7-10750H | Advanced reasoning with thinking mode |
-
-*Performance varies by CPU. Models auto-adapt to available system resources.*
-
-# Advanced Features
-
-### 🔍 Source Word Highlighting
-Every word from your prompts is automatically highlighted in AI responses. Ctrl+click any highlighted word to see its complete usage history across all conversations.
-
-![Source Highlighting Demo](Images/bold_text_demo.gif)
-
-### ⌨️ Keyboard Shortcuts
-- **Ctrl+S**: Send message to AI
-- **Ctrl+Z**: Stop AI generation
-- **Ctrl+F**: Search conversation history  
-- **Ctrl+X**: Clear all chat history
-- **Ctrl+P**: Edit system prompt
-- **Ctrl+Mouse Wheel**: Zoom interface
-
-![Keyboard Shortcuts](Images/CtrlS.gif)
-
-### 💾 Session Management
-Save and load complete conversation histories with full context preservation.
-
-![Session Management](Images/Load_chat.gif)
-
-### 📄 Document Intelligence
-Drag and drop documents for AI-powered analysis, summarization, and Q&A.
-
-# Technical Specifications
-
-**System Requirements:**
-- Windows 7 or later (32-bit and 64-bit)
-- 2GB RAM minimum (4GB+ recommended)
-- 1GB free storage for models
-- Any CPU architecture (Intel, AMD, ARM64)
-
-**Supported Formats:**
-- Models: GGUF format (llama.cpp compatible)
-- Documents: PDF, DOCX, TXT, MD, HTML
-- Export: JSON conversation files
-
-**Architecture:**
-- Frontend: Modern PySide6 with custom UI components
-- Backend: llama-cpp-python for model inference
-- RAG: FAISS vector database with semantic search
-- Embeddings: sentence-transformers for document processing
-
-# Building from Source
+### 1. Clone the repository
 
 ```bash
-# Clone repository
-git clone https://github.com/yourrepo/betaversion.git
-cd betaversion
-
-# Create virtual environment
-python -m venv .venv
-.venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the application
-python launch_beta.py
+git clone https://github.com/Sur5ve/Sur5-Lite.git
+cd Sur5-Lite/App
 ```
 
-# License & Contributing
+### 2. Create a virtual environment (recommended)
 
-Beta Version is released under the Apache 2.0 License - see LICENSE file for details.
+```bash
+python -m venv venv
 
-This project welcomes contributions! Please read our contributing guidelines before submitting pull requests.
+# Windows
+venv\Scripts\activate
 
-**Created by Redacted • Built with ❤️ for the AI community**
+# macOS/Linux
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download a model
+
+Sur5 Lite works with GGUF-format models. We recommend:
+
+- **Qwen2.5-3B-Instruct** (3GB) — Good balance of speed and quality
+- **Phi-3-mini** (2GB) — Smaller and faster
+- **Llama-3.2-3B** (3GB) — Great for general conversation
+
+Place your `.gguf` model file in the `models/` directory.
+
+### 5. Run Sur5 Lite
+
+```bash
+python launch_sur5.py
+```
+
+---
+
+## 📋 Requirements
+
+- **Python 3.11+**
+- **4GB+ RAM** (8GB recommended for larger models)
+- **Any modern CPU** (GPU optional but improves performance)
+
+### Supported Platforms
+
+| Platform | Status | Notes |
+|----------|--------|-------|
+| Windows 10/11 | ✅ Full support | CUDA acceleration available |
+| macOS (Apple Silicon) | ✅ Full support | Metal acceleration enabled |
+| macOS (Intel) | ✅ Supported | CPU-only, slower |
+| Linux | ✅ Full support | CUDA or CPU |
+
+---
+
+## 🎨 Themes
+
+Sur5 Lite includes the **Sur5ve** theme — a modern dark theme with teal accents designed for comfortable extended use.
+
+Additional themes can be added by creating JSON files in `sur5_lite_pyside/themes/theme_data/`.
+
+Change themes via **View → Theme** in the menu bar.
+
+---
+
+## 🧠 Inference Backends
+
+Sur5 Lite supports multiple inference backends:
+
+### llama.cpp (Default)
+
+The primary backend for standard GGUF models. Supports:
+- 2-8 bit quantization (Q4_K_M, Q5_K_M, etc.)
+- GPU acceleration (Metal, CUDA)
+- Flash attention for large contexts
+
+### BitNet.cpp (Coming Soon)
+
+Next-generation backend for 1-bit quantized models:
+- Up to 10x smaller model sizes
+- Minimal quality loss
+- Extremely fast inference
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Enter` | Send message |
+| `Shift+Enter` | New line |
+| `Ctrl+N` | New conversation |
+| `Ctrl+X` | Clear chat |
+| `Ctrl+O` | Select model |
+| `Ctrl+F` | Find in chat |
+| `F3` / `Shift+F3` | Find next/previous |
+| `Escape` | Stop generation |
+| `Ctrl+Shift+S` | Save conversation |
+| `Ctrl+Shift+T` | Export as text |
+| `Ctrl+Shift+M` | Export as markdown |
+
+---
+
+## 🔧 Configuration
+
+### RAM Presets
+
+Sur5 Lite automatically detects your system hardware and selects an appropriate preset:
+
+| Preset | Context Size | Best For |
+|--------|-------------|----------|
+| Ultra | 512 tokens | 4GB RAM systems |
+| Minimal | 2K tokens | Low-end systems |
+| Fast | 8K tokens | Mid-range (8GB+ RAM) |
+| Balanced | 24K tokens | High-end (16GB+ RAM) |
+| Power | 32K tokens | Workstation (24GB+ RAM) |
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md).
+
+### Development Setup
+
+```bash
+# Clone with development tools
+git clone https://github.com/Sur5ve/Sur5-Lite.git
+cd Sur5-Lite/App
+
+# Install with dev dependencies
+pip install -r requirements.txt
+
+# Run in development mode
+python launch_sur5.py
+```
+
+---
+
+## 📄 License
+
+Sur5 Lite source code is licensed under the [MIT License](LICENSE).
+
+**This means:**
+
+- ✅ Free for personal, educational, and commercial use
+- ✅ You can view, modify, and share the source code
+- ✅ Contributions welcome under the same license
+- ✅ Use it however you want, just include the copyright notice
+
+### ⚠️ Trademark Exclusion
+
+The MIT License covers **source code only**. The following are **NOT** open source:
+
+| Asset | Status |
+|-------|--------|
+| Sur5™ name | 🔒 Trademark of Sur5ve LLC |
+| Sur5ve™ name | 🔒 Trademark of Sur5ve LLC |
+| Sur5 logos | 🔒 Copyright Sur5ve LLC |
+| Sur5 icons | 🔒 Copyright Sur5ve LLC |
+
+**If you fork this project**, you must remove all Sur5/Sur5ve branding and create your own.
+
+See [TRADEMARK.md](TRADEMARK.md) for complete policy.
+
+---
+
+## 🙏 Credits
+
+Created with ❤️ by [Sur5ve LLC](https://sur5ve.com)
+
+### Powered By
+
+- [llama.cpp](https://github.com/ggerganov/llama.cpp) — Fast LLM inference
+- [BitNet.cpp](https://github.com/microsoft/BitNet) — 1-bit LLM inference
+- [PySide6](https://www.qt.io/qt-for-python) — Cross-platform UI
+
+---
+
+## 📞 Support
+
+- **Issues**: [GitHub Issues](https://github.com/Sur5ve/Sur5-Lite/issues)
+- **Email**: support@sur5ve.com
+- **Website**: https://sur5ve.com

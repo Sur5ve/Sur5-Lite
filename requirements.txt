@@ -1,27 +1,28 @@
-# Core inference (existing)
-llama-cpp-python>=0.2.0
-llama_cpp_agent
+# Sur5 Lite — Open Source Edge AI
+# Copyright (c) 2024-2026 Sur5ve LLC
+# Licensed under MIT License
+# https://sur5ve.com
 
-# Lightweight RAG stack
-faiss-cpu>=1.8.0
-sentence-transformers>=2.3.0
-onnxruntime>=1.20.0
-rank-bm25>=0.2.2
+# ============================================
+# IMPORTANT: Requires Python 3.11+
+# ============================================
 
-# Document parsing for survival guides
-pypdf>=4.0.0
-python-docx>=1.0.0
-beautifulsoup4>=4.12.0
-markdown>=3.5.0
+# UI Framework
+PySide6>=6.5.0
 
-# OCR for scanned survival manuals (optional, high value)
-easyocr>=1.7.0
-Pillow>=10.0.0
+# Async event loop for non-blocking UI (macOS and Linux)
+# Windows uses QThread instead for better compatibility
+qasync>=0.23.0; sys_platform != 'win32'
+
+# Core inference - llama.cpp backend
+# For Metal support on macOS:
+#   pip install llama-cpp-python==0.3.16 --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal
+llama-cpp-python==0.3.16
 
 # Offline text processing
 nltk>=3.8.0
+markdown>=3.5.0
 
-# System monitoring for emergency resource management
+# System monitoring
 psutil>=5.9.0
-numpy>=1.26.0
 tqdm>=4.66.0

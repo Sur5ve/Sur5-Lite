@@ -1,0 +1,5 @@
+#!/bin/bash
+# Convenience wrapper - Easy diagnostic access
+cd "$(dirname "$0")"
+./tools/wrappers/comprehensive_diagnostic.py "$@"
+

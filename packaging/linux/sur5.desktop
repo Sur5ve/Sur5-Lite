@@ -1,0 +1,19 @@
+[Desktop Entry]
+Name=Sur5 Lite
+Comment=Open Source Edge AI — Offline, Portable, No Cloud
+GenericName=Edge AI Assistant
+Exec=/opt/Sur5Lite/Sur5Lite %F
+Icon=sur5lite
+Terminal=false
+Type=Application
+Categories=Utility;AI;Office;
+Keywords=ai;edge-ai;chat;llm;offline;portable;
+StartupNotify=true
+StartupWMClass=Sur5Lite
+
+
+
+
+
+
+

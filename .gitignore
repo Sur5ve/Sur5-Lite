@@ -11,7 +11,13 @@ venv/
 # Build/Dist artifacts
 build/
 dist/
+# Ignore PyInstaller-generated spec files in root, but keep config/
 *.spec
+!config/*.spec
+.nuitka_cache/
+*.build/
+*.dist/
+*.onefile-build/
 
 # OS/Editor files
 .DS_Store
@@ -19,9 +25,29 @@ Thumbs.db
 .vscode/
 .cursor/
 
+# Testing cache
+.pytest_cache/
+__pycache__/
+
+# Large model files (download separately)
+models/*.gguf
+
+# Log files
+logs/
+sur5_lite_pyside/utils/logs/
+*.log
+
+# User data (personal settings and conversations)
+UserData/
+
+# Local settings with personal paths
+config/settings.json
+sur5_lite_pyside/settings.json
+sur5_lite_pyside/model_settings.json
+
 # Large local data
-rag_data/
 *.betachat
 
 # Ignore everything in user folders if mistakenly opened
 /../../../../*
+experimental/
